@@ -62,7 +62,10 @@ python manage.py runserver
 ```json
 {
 "email": "user@example.com",
-"password": "password123"
+"username": "testuser",
+"password": "password123",
+"first_name": "Test",
+"last_name": "User"
 }
 ```
 
@@ -115,6 +118,7 @@ python manage.py runserver
 "recorded_at": "2024-02-18T10:00:00Z",
 "notes": "Regular checkup"
 }
+```
 
 ### 2. Get Heart Rate Records
 - **URL**: `GET /api/heart-rates/`

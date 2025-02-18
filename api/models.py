@@ -7,7 +7,6 @@ class User(AbstractUser):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # Add related_name to resolve conflicts
     groups = models.ManyToManyField(
         'auth.Group',
         related_name='api_user_groups',
